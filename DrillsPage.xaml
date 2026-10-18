@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdaptedPhysicalEducationApp.DrillsPage"
+             Title="DrillsPage">
+
+    <Grid Padding="20"
+        RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+        RowSpacing="20">
+        <Grid Grid.Row="0" Padding="10.0"
+            ColumnDefinitions="Auto, *"
+            ColumnSpacing="10">
+            <!--Drills Back Button-->
+            <Button Grid.Column="0"
+                x:Name="DrillsBackButton"
+                Text="&#x2190;"
+                FontSize="18"
+                Padding="30,12"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"
+                ZIndex="1" />
+
+            <!--Drills Header-->
+            <Label Grid.ColumnSpan="2"
+                Text="(Activity Action) Drills"
+                FontSize="50"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                InputTransparent="True" />
+        </Grid>
+        <Grid Grid.Row="1" Padding="10.0"
+            ColumnDefinitions="*,Auto"
+            ColumnSpacing="10">
+            <!--Drills Search Field-->
+            <Entry Grid.Column="0"
+                Placeholder="Search drills"
+                PlaceholderColor="Black"
+                FontSize="30"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                VerticalOptions="Center"
+                HorizontalOptions="Fill" />
+
+            <!--Drills Search Button-->
+            <Button Grid.Column="1"
+                x:Name="DrillsSearchButton"
+                Text="Search"
+                FontSize="20"
+                Padding="30,12"
+                VerticalOptions="Center"
+                HorizontalOptions="Start" />
+        </Grid>
+        <!--Drills Collection SelectionChanged="OnDrillSelected"
+        <CollectionView Grid.Row="2"
+                        x:Name="DrillsCV"
+                        ItemsSource="{Binding Drills}"
+                        SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Drill">-->
+        <!--Stationary Shot Box-->
+        <Border Grid.Row="2"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="10"
+                Margin="10,5">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8" />
+            </Border.StrokeShape>
+
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                ColumnSpacing="12">
+
+                <!--Drill Image-->
+                <Image Grid.Column="0"
+                    Source="dotnet_bot.png"
+                    WidthRequest="150"
+                    HeightRequest="120"
+                    Aspect="AspectFill"
+                    VerticalOptions="Center" />
+
+                <!--Drill Name and Buttons-->
+                <VerticalStackLayout Grid.Column="1"
+                                    Spacing="8"
+                                    VerticalOptions="Center">
+                    <!--Name of the Drill-->
+                    <Label Text="Stationary Shot"
+                        FontSize="40"
+                        FontAttributes="Bold" />
+
+                    <HorizontalStackLayout Spacing="8">
+                        <!--Video Button-Should these be buttons or just light up if the drill has a video or not-->
+                        <Button Text="Video"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="14,0"/>
+                                <!--="OnVideoClicked" />-->
+                        <!--Steps Button-->
+                        <Button Text="Steps"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="14,0"/>
+                                <!--="OnStepsClicked" />-->
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+                <!--Drill Right Arrow-->
+                <Label Grid.Column="2"
+                    Text="&#x2192;"
+                    FontSize="40"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Border>
+        <!--         </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>-->
+
+
+        <!--Close Range Shot Box-->
+        <Border Grid.Row="3"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="10"
+                Margin="10,5">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8" />
+            </Border.StrokeShape>
+
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                ColumnSpacing="12">
+
+                <!--Drill Image-->
+                <Image Grid.Column="0"
+                    Source="dotnet_bot.png"
+                    WidthRequest="150"
+                    HeightRequest="120"
+                    Aspect="AspectFill"
+                    VerticalOptions="Center" />
+
+                <!--Drill Name and Buttons-->
+                <VerticalStackLayout Grid.Column="1"
+                                    Spacing="8"
+                                    VerticalOptions="Center">
+                    <!--Name of the Drill-->
+                    <Label Text="Close Range Shot"
+                        FontSize="40"
+                        FontAttributes="Bold" />
+
+                    <HorizontalStackLayout Spacing="8">
+                        <!--Video Button-Should these be buttons or just light up if the drill has a video or not-->
+                        <Button Text="Video"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="10,0"/>
+                                <!--="OnVideoClicked" />-->
+                        <!--Steps Button-->
+                        <Button Text="Steps"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="10,0"/>
+                                <!--="OnStepsClicked" />-->
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+                <!--Drill Right Arrow-->
+                <Label Grid.Column="2"
+                    Text="&#x2192;"
+                    FontSize="40"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Border>
+
+        <!--Modified Hoop Shot Box-->
+        <Border Grid.Row="4"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="10"
+                Margin="10,5">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8" />
+            </Border.StrokeShape>
+
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                ColumnSpacing="12">
+
+                <!--Drill Image-->
+                <Image Grid.Column="0"
+                    Source="dotnet_bot.png"
+                    WidthRequest="150"
+                    HeightRequest="120"
+                    Aspect="AspectFill"
+                    VerticalOptions="Center" />
+
+                <!--Drill Name and Buttons-->
+                <VerticalStackLayout Grid.Column="1"
+                                    Spacing="8"
+                                    VerticalOptions="Center">
+                    <!--Name of the Drill-->
+                    <Label Text="Modified Hoop Shot"
+                        FontSize="40"
+                        FontAttributes="Bold" />
+
+                    <HorizontalStackLayout Spacing="8">
+                        <!--Video Button-Should these be buttons or just light up if the drill has a video or not-->
+                        <Button Text="Video"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="14,0"/>
+                                <!--="OnVideoClicked" />-->
+                        <!--Steps Button-->
+                        <Button Text="Steps"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="14,0"/>
+                                <!--="OnStepsClicked" />-->
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+                <!--Drill Right Arrow-->
+                <Label Grid.Column="2"
+                    Text="&#x2192;"
+                    FontSize="40"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Border>
+        <!--Seated Shot Box-->
+        <Border Grid.Row="5"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="10"
+                Margin="10,5">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8" />
+            </Border.StrokeShape>
+
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                ColumnSpacing="12">
+
+                <!--Drill Image-->
+                <Image Grid.Column="0"
+                    Source="dotnet_bot.png"
+                    WidthRequest="150"
+                    HeightRequest="120"
+                    Aspect="AspectFill"
+                    VerticalOptions="Center" />
+
+                <!--Drill Name and Buttons-->
+                <VerticalStackLayout Grid.Column="1"
+                                    Spacing="8"
+                                    VerticalOptions="Center">
+                    <!--Name of the Drill-->
+                    <Label Text="Seated Shot"
+                        FontSize="40"
+                        FontAttributes="Bold" />
+
+                    <HorizontalStackLayout Spacing="8">
+                        <!--Video Button-Should these be buttons or just light up if the drill has a video or not-->
+                        <Button Text="Video"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="14,0"/>
+                                <!--="OnVideoClicked" />-->
+                        <!--Steps Button-->
+                        <Button Text="Steps"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="14,0"/>
+                                <!--="OnStepsClicked" />-->
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+                <!--Drill Right Arrow-->
+                <Label Grid.Column="2"
+                    Text="&#x2192;"
+                    FontSize="40"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Border>
+        <!--Partner Assist Shot Box-->
+        <Border Grid.Row="6"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="10"
+                Margin="10,5">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8" />
+            </Border.StrokeShape>
+
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                ColumnSpacing="12">
+
+                <!--Drill Image-->
+                <Image Grid.Column="0"
+                    Source="dotnet_bot.png"
+                    WidthRequest="150"
+                    HeightRequest="120"
+                    Aspect="AspectFill"
+                    VerticalOptions="Center" />
+
+                <!--Drill Name and Buttons-->
+                <VerticalStackLayout Grid.Column="1"
+                                    Spacing="8"
+                                    VerticalOptions="Center">
+                    <!--Name of the Drill-->
+                    <Label Text="Partner Assist Shot"
+                        FontSize="40"
+                        FontAttributes="Bold" />
+
+                    <HorizontalStackLayout Spacing="8">
+                        <!--Video Button-Should these be buttons or just light up if the drill has a video or not-->
+                        <Button Text="Video"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="14,0"/>
+                                <!--="OnVideoClicked" />-->
+                        <!--Steps Button-->
+                        <Button Text="Steps"
+                                FontSize="18"
+                                HeightRequest="32"
+                                MinimumHeightRequest="32"
+                                Padding="14,0"/>
+                                <!--="OnStepsClicked" />-->
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+                <!--Drill Right Arrow-->
+                <Label Grid.Column="2"
+                    Text="&#x2192;"
+                    FontSize="40"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</ContentPage>

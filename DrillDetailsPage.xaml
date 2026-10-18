@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdaptedPhysicalEducationApp.DrillDetailsPage"
+             Title="DrillDetailsPage">
+    <Grid Padding="20"
+        RowDefinitions="Auto,Auto,Auto,*"
+        RowSpacing="10">
+        <Grid Grid.Row="0" Padding="10.0" 
+            ColumnDefinitions="Auto,*,Auto">
+            <!--Drill Details Back Button-->
+            <Button Grid.Column="0"    
+                x:Name="DetailsBackButton"
+                Text="&#x2190;"
+                FontSize="20"
+                Padding="30,12"
+                VerticalOptions="Center" />
+            <!--Drill Detail Header-->
+            <Label Grid.Column="1"
+                Text="(Drill)"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <!--Drill Like Button-->
+            <Button Grid.Column="2"    
+                x:Name="DetailsLikeButton"
+                Text="&lt;3"
+                FontSize="20"
+                Padding="30,12"
+                VerticalOptions="Center" />
+        </Grid>
+        <!--Drill Video/Image-->
+        <Image Grid.Row="1"
+            Source="dotnet_bot.png"
+            HeightRequest="350"
+            Aspect="AspectFit" />
+        <Border Grid.Row="2"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="10"
+                Margin="10,5">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8" />
+            </Border.StrokeShape>
+            <VerticalStackLayout Spacing="6">
+                <!--Description Label-->
+                <Label Text="Description"
+                    FontAttributes="Bold"
+                    FontSize="25" />
+                <!--Drill Description-->
+                <Label Text="(A stationary shooting drill to help students practice proper hand placement and build confidence)"
+                    FontSize="20" />
+            </VerticalStackLayout>
+        </Border>
+        <!--Step by Step Instructions Box-->
+        <Border Grid.Row="3"
+                Stroke="LightSkyBlue"
+                StrokeThickness="1"
+                Padding="10"
+                Margin="10,5"
+                BackgroundColor="LightSkyBlue">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="8" />
+            </Border.StrokeShape>
+            <VerticalStackLayout Spacing="6">
+                <!--Step by Step Label-->
+                <Label Text="Step-by-Step Instructions"
+                    FontAttributes="Bold"
+                    TextColor="Black"
+                    FontSize="25" />
+                <Grid Padding="20"
+                    RowDefinitions="Auto,Auto,Auto,Auto"
+                    RowSpacing="10"
+                    ColumnDefinitions="Auto,*"
+                    ColumnSpacing="12">
+                    <!--Step Number in Circle-->
+                    <Border Grid.Row="0"
+                            Grid.Column="0"
+                            WidthRequest="36"
+                            HeightRequest="36"
+                            StrokeShape="Ellipse"
+                            StrokeThickness="0"
+                            Background="Blue"
+                            Padding="0">
+                        <Label Text="1"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                    </Border>
+                    <!--Step Directions-->
+                    <Label Grid.Row="0"
+                        Grid.Column="1"
+                        Text="Position the student at a comfortable distance from the hoop."
+                        TextColor="Black"
+                        FontSize="20"
+                        VerticalOptions="Center"/>
+                    
+                    
+                    <!--Step 2-->
+                    <Border Grid.Row="1"
+                            Grid.Column="0"
+                            WidthRequest="36"
+                            HeightRequest="36"
+                            StrokeShape="Ellipse"
+                            StrokeThickness="0"
+                            Background="Blue"
+                            Padding="0">
+                        <Label Text="2"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                    </Border>
+                    <Label Grid.Row="1"
+                        Grid.Column="1"
+                        Text="Use a modified ball if needed."
+                        TextColor="Black"
+                        FontSize="20"
+                        VerticalOptions="Center"/>
+                    <!--Step 3-->
+                    <Border Grid.Row="2"
+                            Grid.Column="0"
+                            WidthRequest="36"
+                            HeightRequest="36"
+                            StrokeShape="Ellipse"
+                            StrokeThickness="0"
+                            Background="Blue"
+                            Padding="0">
+                        <Label Text="3"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                    </Border>
+                    <Label Grid.Row="2"
+                        Grid.Column="1"
+                        Text="Encourage proper hand placement."
+                        TextColor="Black"
+                        FontSize="20"
+                        VerticalOptions="Center"/>
+                    <!--Step 4-->
+                    <Border Grid.Row="3"
+                            Grid.Column="0"
+                            WidthRequest="36"
+                            HeightRequest="36"
+                            StrokeShape="Ellipse"
+                            StrokeThickness="0"
+                            Background="Blue"
+                            Padding="0">
+                        <Label Text="4"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                    </Border>
+                    <Label Grid.Row="3"
+                        Grid.Column="1"
+                        Text="Allow multiple practice attempts."
+                        TextColor="Black"
+                        FontSize="20"
+                        VerticalOptions="Center"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>
