@@ -9,8 +9,18 @@ public partial class App : Application
 		InitializeComponent();
 	}
 
+	private readonly Func<ContentPage>[] Pages =
+	{
+	// () => new DrillsPage(),
+	// () => new DrillDetailsPage()
+	};
+
+	private const int pageToShow = 0;
+
 	protected override Window CreateWindow(IActivationState? activationState)
 	{
-		return new Window(new AppShell());
+		//return new Window(Pages[pageToShow]());
+		return new Window(new EquipmentDetails());
+		//return new Window(new EquipmentModifications());
 	}
 }
