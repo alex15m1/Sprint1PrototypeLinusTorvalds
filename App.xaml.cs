@@ -1,3 +1,4 @@
+
 ﻿namespace AdaptedPhysicalEducationApp;
 
 public partial class App : Application
@@ -21,3 +22,4 @@ public partial class App : Application
 		return new Window(PageSelection[pageToShow]());
 	}
 }
+

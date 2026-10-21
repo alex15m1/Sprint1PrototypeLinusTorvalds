@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AdaptedPhysicalEducationApp.Views.LessonPlansPage"
+    Title="Lesson Plans"
+    BackgroundColor="#F5F7FA">
+    <ScrollView>
+        <VerticalStackLayout Padding="20,25" Spacing="15">
+            <!-- Header -->
+            <Label
+                Text="📋 Lesson Plans"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="#243B53"
+                HorizontalOptions="Center"/>
+            <Label
+                Text="Find lessons and adapted activities"
+                FontSize="15"
+                TextColor="Gray"
+                HorizontalOptions="Center"/>
+            <!-- Search Placeholder -->
+            <Border
+                BackgroundColor="White"
+                Stroke="#DCE4EA"
+                Padding="15"
+                StrokeShape="RoundRectangle 12">
+                <Label
+                    Text="🔍  Search lesson plans..."
+                    FontSize="16"
+                    TextColor="Gray"/>
+            </Border>
+            <Label
+                Text="Available Lessons"
+                FontSize="21"
+                FontAttributes="Bold"
+                TextColor="#243B53"
+                Margin="0,10,0,0"/>
+            <!-- Basketball Lessons -->
+            <Border BackgroundColor="#E3F0FF"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="🏀 Basketball Lessons"
+                           FontSize="19"
+                           FontAttributes="Bold"/>
+                    <Label Text="Shooting, passing and dribbling"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Soccer Lessons -->
+            <Border BackgroundColor="#E8F5E9"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="⚽ Soccer Lessons"
+                           FontSize="19"
+                           FontAttributes="Bold"/>
+                    <Label Text="Movement and ball control"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Track and Field -->
+            <Border BackgroundColor="#FFF3E0"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <Label Text="🏃 Track &amp; Field Lessons"
+                       FontSize="19"
+                       FontAttributes="Bold"/>
+            </Border>
+            <!-- Cooperative Games -->
+            <Border BackgroundColor="#F3E5F5"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <Label Text="👥 Cooperative Games"
+                       FontSize="19"
+                       FontAttributes="Bold"/>
+            </Border>
+            <!-- Fitness -->
+            <Border BackgroundColor="#E0F7FA"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <Label Text="💪 Fitness Lessons"
+                       FontSize="19"
+                       FontAttributes="Bold"/>
+            </Border>
+            <!-- Seasonal Activities -->
+            <Border BackgroundColor="#FFF8E1"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <Label Text="📅 Seasonal Activities"
+                       FontSize="19"
+                       FontAttributes="Bold"/>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
