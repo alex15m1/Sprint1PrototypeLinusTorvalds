@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AdaptedPhysicalEducationApp.Views.BasketballPage"
+    Title="Basketball"
+    BackgroundColor="#F5F7FA">
+    <ScrollView>
+        <VerticalStackLayout Padding="20,25" Spacing="15">
+            <!-- Header -->
+            <Label
+                Text="🏀 Basketball"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="#243B53"
+                HorizontalOptions="Center"/>
+            <Label
+                Text="Choose a skill or activity"
+                FontSize="16"
+                TextColor="Gray"
+                HorizontalOptions="Center"
+                Margin="0,0,0,10"/>
+            <!-- Shooting -->
+            <Border BackgroundColor="#E3F0FF"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="🎯 Shooting Drills"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Label Text="Modified shooting activities"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Dribbling -->
+            <Border BackgroundColor="#E8F5E9"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="🏀 Dribbling Drills"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Label Text="Ball control activities"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Passing -->
+            <Border BackgroundColor="#FFF3E0"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="🤝 Passing Drills"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Label Text="Partner and team passing"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Game Play -->
+            <Border BackgroundColor="#F3E5F5"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="👥 Game Play"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="Modified basketball games"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Equipment -->
+            <Border BackgroundColor="#E0F7FA"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="⚙️ Equipment &amp; Setup"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="Adapted equipment options"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Lesson Ideas -->
+            <Border BackgroundColor="#FFF8E1"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="📋 Lesson Ideas"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="Basketball lesson examples"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
