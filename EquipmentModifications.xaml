@@ -1,0 +1,247 @@
+<!--Alex Martinez Screen 7 Equipment Modifications-->
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AdaptedPhysicalEducationApp.EquipmentModifications"
+    BackgroundColor="White"
+    NavigationPage.HasNavigationBar="False">
+
+    <Grid RowDefinitions="Auto,Auto,*,Auto"
+          Padding="15,10">
+
+        <!-- Header -->
+        <Grid Grid.Row="0"
+              ColumnDefinitions="40,*"
+              Margin="5,10,5,15">
+
+            <Label Text="‹"
+                   FontSize="40"
+                   TextColor="Black"/>
+
+            <Label Grid.Column="1"
+                   Text="Equipment Modifications"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+        </Grid>
+
+        <!-- Search bar-->
+        <SearchBar Grid.Row="1"
+                   Placeholder="Search equipment..."
+                   BackgroundColor="#F3F3F5"
+                   Margin="0,0,0,15"/>
+
+        <!-- Equipment tabs -->
+        <ScrollView Grid.Row="2">
+
+            <VerticalStackLayout Spacing="10">
+
+                <!-- Basketball -->
+                <Border Stroke="#E5E5E5"
+                        StrokeShape="RoundRectangle 15"
+                        Padding="10"
+                        HeightRequest="85">
+
+                    <Grid ColumnDefinitions="110,*,25">
+
+                        <Image Source="modified_basketball.png"
+                               HeightRequest="75"/>
+
+                        <Label Grid.Column="1"
+                               Text="Basketball"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2"
+                               Text="›"
+                               FontSize="30"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
+
+                <!-- Soccer -->
+                <Border Stroke="#E5E5E5"
+                        StrokeShape="RoundRectangle 15"
+                        Padding="10"
+                        HeightRequest="85">
+
+                    <Grid ColumnDefinitions="110,*,25">
+
+                        <Image Source="soccer.png"
+                               HeightRequest="75"/>
+
+                        <Label Grid.Column="1"
+                               Text="Soccer"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2"
+                               Text="›"
+                               FontSize="30"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
+
+                <!-- Baseball / Softball -->
+                <Border Stroke="#E5E5E5"
+                        StrokeShape="RoundRectangle 15"
+                        Padding="10"
+                        HeightRequest="85">
+
+                    <Grid ColumnDefinitions="110,*,25">
+
+                        <Image Source="softball.png"
+                               HeightRequest="75"/>
+
+                        <Label Grid.Column="1"
+                               Text="Baseball/Softball"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2"
+                               Text="›"
+                               FontSize="30"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
+
+                <!-- Track & Field -->
+                <Border Stroke="#E5E5E5"
+                        StrokeShape="RoundRectangle 15"
+                        Padding="10"
+                        HeightRequest="85">
+
+                    <Grid ColumnDefinitions="110,*,25">
+
+                        <Image Source="cone.png"
+                               HeightRequest="75"/>
+
+                        <Label Grid.Column="1"
+                               Text="Track &amp; Field"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2"
+                               Text="›"
+                               FontSize="30"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
+
+                <!-- Fitness equipment -->
+                <Border Stroke="#E5E5E5"
+                        StrokeShape="RoundRectangle 15"
+                        Padding="10"
+                        HeightRequest="85">
+
+                    <Grid ColumnDefinitions="110,*,25">
+
+                        <Image Source="fitness.png"
+                               HeightRequest="75"/>
+
+                        <Label Grid.Column="1"
+                               Text="Fitness Equipment"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2"
+                               Text="›"
+                               FontSize="30"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
+
+                <!-- Other equipment -->
+                <Border Stroke="#E5E5E5"
+                        StrokeShape="RoundRectangle 15"
+                        Padding="10"
+                        HeightRequest="85">
+
+                    <Grid ColumnDefinitions="110,*,25">
+
+                        <Image Source="other_equipment.png"
+                               HeightRequest="75"/>
+
+                        <Label Grid.Column="1"
+                               Text="Other Equipment"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               VerticalOptions="Center"/>
+
+                        <Label Grid.Column="2"
+                               Text="›"
+                               FontSize="30"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Bottom navigation -->
+        <Grid Grid.Row="3"
+              ColumnDefinitions="*,*,*,*"
+              HeightRequest="70"
+              Padding="0,10,0,0">
+
+            <VerticalStackLayout Grid.Column="0"
+                                 HorizontalOptions="Center">
+                <Label Text="⌂"
+                       FontSize="30"
+                       TextColor="#0875D9"
+                       HorizontalOptions="Center"/>
+                <Label Text="Home"
+                       FontSize="12"
+                       TextColor="#0875D9"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1"
+                                 HorizontalOptions="Center">
+                <Label Text="⌕"
+                       FontSize="30"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+                <Label Text="Search"
+                       FontSize="12"
+                       TextColor="Black"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="2"
+                                 HorizontalOptions="Center">
+                <Label Text="♡"
+                       FontSize="30"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+                <Label Text="Favorites"
+                       FontSize="12"
+                       TextColor="Black"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="3"
+                                 HorizontalOptions="Center">
+                <Label Text="⚙"
+                       FontSize="30"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+                <Label Text="Settings"
+                       FontSize="12"
+                       TextColor="Black"/>
+            </VerticalStackLayout>
+
+        </Grid>
+
+    </Grid>
+</ContentPage>
