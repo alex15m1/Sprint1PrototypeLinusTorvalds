@@ -1,6 +1,6 @@
 ﻿namespace AdaptedPhysicalEducationApp;
 
-public partial class AppShell : Shell
+public partial class AppShell : ContentPage
 {
 	public AppShell()
 	{
