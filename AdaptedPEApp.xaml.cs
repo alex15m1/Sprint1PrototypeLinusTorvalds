@@ -18,7 +18,11 @@ public partial class App : Application
         () => new AdaptedPhysicalEducationApp.DrillsPage(),
         () => new AdaptedPhysicalEducationApp.DrillDetailsPage(),
         () => new AdaptedPhysicalEducationApp.Views.LessonPlansPage(),
-        () => new AdaptedPhysicalEducationApp.MainPage()
+        () => new AdaptedPhysicalEducationApp.EquipmentModifications(),
+        () => new AdaptedPhysicalEducationApp.EquipmentDetails(),
+        () => new AdaptedPhysicalEducationApp.StudentSupportStrategies(),
+        () => new AdaptedPhysicalEducationApp.MainPage(),
+        () => new AdaptedPhysicalEducationApp.AppShell()
     ];
 
     protected override Window CreateWindow(IActivationState? activationState)

@@ -18,7 +18,11 @@ public partial class App : Application
 		() => new DrillsPage(),
 		() => new DrillDetailsPage(),
 		() => new Views.LessonPlansPage(),
-		() => new MainPage()
+		() => new EquipmentModifications(),
+		() => new EquipmentDetails(),
+		() => new StudentSupportStrategies(),
+		() => new MainPage(),
+		() => new AppShell()
 	];
 
 	protected override Window CreateWindow(IActivationState? activationState)
