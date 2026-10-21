@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AdaptedPhysicalEducationApp.Views.ActivitiesPage"
+    Title="Activities"
+    BackgroundColor="#F5F7FA">
+    <ScrollView>
+        <VerticalStackLayout Padding="20,25" Spacing="15">
+            <!-- Screen Title -->
+            <Label
+                Text="Activities"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="#243B53"
+                HorizontalOptions="Center"
+                Margin="0,5,0,10"/>
+            <!-- Search Bar Placeholder -->
+            <Border
+                BackgroundColor="White"
+                Stroke="#DCE4EA"
+                Padding="15"
+                StrokeShape="RoundRectangle 12">
+                <Label
+                    Text="🔍  Search activities..."
+                    TextColor="Gray"
+                    FontSize="16"/>
+            </Border>
+            <!-- Basketball -->
+            <Border BackgroundColor="#E3F0FF"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="🏀 Basketball"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Label Text="Modified activities and drills"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Soccer -->
+            <Border BackgroundColor="#E8F5E9"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="⚽ Soccer"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Label Text="Modified activities and drills"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Track and Field -->
+            <Border BackgroundColor="#FFF3E0"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="🏃 Track &amp; Field"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Label Text="Running, jumping and throwing"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Throwing and Catching -->
+            <Border BackgroundColor="#F3E5F5"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="🔴 Throwing &amp; Catching"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Label Text="Ball skill activities"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Cooperative Games -->
+            <Border BackgroundColor="#E0F7FA"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="👥 Cooperative Games"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="Team-based activities"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+            <!-- Fitness -->
+            <Border BackgroundColor="#FFF8E1"
+                    Padding="20"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 15">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="💪 Fitness Activities"
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Label Text="Strength and movement"
+                           FontSize="13"
+                           TextColor="#526579"/>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
