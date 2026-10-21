@@ -1,5 +1,4 @@
 
-﻿namespace AdaptedPhysicalEducationApp;
 
 public partial class App : Application
 {
@@ -11,12 +10,11 @@ public partial class App : Application
 	private const int pageToShow = 0;
 	private static readonly Func<Page>[] PageSelection =
 	[
+    () => new DrillsPage(),
+	  () => new DrillDetailsPage()
 		() => new AdaptedPE.HomePage(),
 		() => new AdaptedPE.SchoolLevelPage(),
 		() => new AdaptedPE.TeacherSignInPage(),
-		() => new Views.ActivitiesPage(),
-		() => new Views.BasketballPage(),
-		() => new Views.LessonPlansPage(),
 		() => new MainPage()
 	];
 
@@ -24,5 +22,5 @@ public partial class App : Application
 	{
 		return new Window(PageSelection[pageToShow]());
 	}
-}
 
+}
