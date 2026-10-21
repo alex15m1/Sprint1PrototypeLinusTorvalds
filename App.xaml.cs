@@ -19,8 +19,9 @@ public partial class App : Application
 
 	protected override Window CreateWindow(IActivationState? activationState)
 	{
-		//return new Window(Pages[pageToShow]());
+		
 		//return new Window(new EquipmentDetails());
-		return new Window(new EquipmentModifications());
+		//return new Window(new EquipmentModifications());
+		return new Window(new StudentSupportStrategies());
 	}
 }
