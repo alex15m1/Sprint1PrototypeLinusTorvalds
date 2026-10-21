@@ -14,6 +14,9 @@ public partial class App : Application
 		() => new AdaptedPE.HomePage(),
 		() => new AdaptedPE.SchoolLevelPage(),
 		() => new AdaptedPE.TeacherSignInPage(),
+		() => new Views.ActivitiesPage(),
+		() => new Views.BasketballPage(),
+		() => new Views.LessonPlansPage(),
 		() => new MainPage()
 	];
 
