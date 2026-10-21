@@ -14,13 +14,4 @@ public partial class TeacherSignInPage : ContentPage
         InitializeComponent();
     }
 
-    private async void OnBackClicked(object? sender, EventArgs e)
-    {
-        await Navigation.PopAsync();
-    }
-
-    private async void OnSignInClicked(object? sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new SchoolLevelPage());
-    }
 }

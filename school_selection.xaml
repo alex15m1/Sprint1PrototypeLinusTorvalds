@@ -4,8 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AdaptedPE.HomePage"
-    BackgroundColor="White"
-    NavigationPage.HasNavigationBar="False">
+    BackgroundColor="White">
 
     <Grid>
         <ScrollView>
@@ -37,10 +36,6 @@
                 HeightRequest="112"
                 StrokeShape="RoundRectangle 18"
                 Margin="0,0,0,14">
-                <Border.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnSchoolSelected" />
-                </Border.GestureRecognizers>
-
                 <Grid
                     ColumnDefinitions="90,*,35"
                     Padding="10,12">
@@ -89,10 +84,6 @@
                 HeightRequest="112"
                 StrokeShape="RoundRectangle 18"
                 Margin="0,0,0,14">
-                <Border.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnSchoolSelected" />
-                </Border.GestureRecognizers>
-
                 <Grid
                     ColumnDefinitions="90,*,35"
                     Padding="10,12">
@@ -140,10 +131,6 @@
                 StrokeThickness="0"
                 HeightRequest="112"
                 StrokeShape="RoundRectangle 18">
-                <Border.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnSchoolSelected" />
-                </Border.GestureRecognizers>
-
                 <Grid
                     ColumnDefinitions="90,*,35"
                     Padding="10,12">
@@ -197,9 +184,6 @@
             Margin="22,0,22,24"
             Padding="8,6"
             BackgroundColor="White">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnTeacherSignInTapped" />
-            </Label.GestureRecognizers>
         </Label>
     </Grid>
 

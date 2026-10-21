@@ -4,8 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AdaptedPE.TeacherSignInPage"
-    BackgroundColor="White"
-    NavigationPage.HasNavigationBar="False">
+    BackgroundColor="White">
 
     <ScrollView>
         <VerticalStackLayout
@@ -18,8 +17,7 @@
                 TextColor="#1464D2"
                 BackgroundColor="Transparent"
                 HorizontalOptions="Start"
-                Padding="0"
-                Clicked="OnBackClicked" />
+                Padding="0" />
 
             <Label
                 Text="Teacher Sign in"
@@ -65,8 +63,7 @@
                 BackgroundColor="#1464D2"
                 CornerRadius="10"
                 HeightRequest="52"
-                Margin="0,12,0,0"
-                Clicked="OnSignInClicked" />
+                Margin="0,12,0,0" />
 
         </VerticalStackLayout>
     </ScrollView>

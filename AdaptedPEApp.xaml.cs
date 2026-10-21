@@ -7,8 +7,17 @@ public partial class App : Application
         InitializeComponent();
     }
 
+    private const int pageToShow = 0;
+    private static readonly Func<Page>[] PageSelection =
+    [
+        () => new HomePage(),
+        () => new SchoolLevelPage(),
+        () => new TeacherSignInPage(),
+        () => new AdaptedPhysicalEducationApp.MainPage()
+    ];
+
     protected override Window CreateWindow(IActivationState? activationState)
     {
-        return new Window(new NavigationPage(new HomePage()));
+        return new Window(PageSelection[pageToShow]());
     }
 }
